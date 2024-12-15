@@ -161,8 +161,9 @@ $ docker-compose up --build
 - Vá em Configuration > Data Sources > Add Data Source.
 - Selecione Prometheus e adicione a URL http://prometheus:9090.
 - Criando Dashboards: Agora você pode criar dashboards no Grafana para visualizar as métricas da sua aplicação.
----
 
+---
+'''
 ## 📂 Estrutura de Diretórios
 /
 ├── backend/            # Código do backend em Django
@@ -176,7 +177,7 @@ $ docker-compose up --build
 │   └── package.json    # Dependências do Node.js
 ├── docker-compose.yml  # Arquivo de orquestração Docker
 └── README.md           # Documentação do projeto
-
+'''
 
 ---
 
