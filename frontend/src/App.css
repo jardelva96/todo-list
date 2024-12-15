@@ -1,0 +1,126 @@
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #222;
+  color: white;
+  font-size: 20px; /* Aumento da fonte principal em 30% */
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px; /* Aumenta o espaçamento */
+  background-color: #333;
+  border-bottom: 2px solid #444; /* Adiciona a borda inferior */
+}
+
+.header-left {
+  display: flex;
+  gap: 30px; /* Aumenta o espaçamento entre os links */
+}
+
+.header-link {
+  color: white;
+  text-decoration: none;
+  font-size: 24px; /* Aumento da fonte dos links */
+  padding: 15px 20px;
+  border-radius: 5px;
+}
+
+.header-link:hover {
+  background-color: #444;
+}
+
+.header-right {
+  font-size: 42px; /* Aumento da fonte para destacar */
+  font-weight: bold;
+}
+
+/* Main Content */
+.main-content {
+  display: flex;
+  justify-content: center;
+  gap: 40px; /* Aumenta o espaçamento entre as colunas */
+  padding: 40px; /* Aumenta o padding para expandir as páginas */
+  border-bottom: 2px solid #444; /* Adiciona a borda inferior */
+}
+
+.map-container,
+.weather-container {
+  width: 50%; /* Aumenta o tamanho das áreas */
+}
+
+.weather-container {
+  margin-top: 30px;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 350px; /* Aumenta a altura */
+  border-radius: 15px;
+}
+
+.weather-container iframe {
+  width: 100%;
+  height: 200px; /* Aumenta a altura */
+  border-radius: 15px;
+}
+
+/* Form Container (Tasks, Login, Register) */
+.form-container {
+  width: 50%; /* Aumenta a largura do container */
+  background-color: #333;
+  padding: 30px; /* Aumenta o padding */
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  padding: 30px; /* Aumenta o padding */
+  text-align: center;
+  color: white;
+  font-size: 18px; /* Aumenta a fonte do rodapé */
+  border-top: 2px solid #444; /* Adiciona a borda superior */
+}
+
+footer .footer-content p {
+  margin: 15px 0; /* Aumenta o espaçamento entre os parágrafos */
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .map-container,
+  .weather-container {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .header-left {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-link {
+    font-size: 22px; /* Ajusta a fonte do link para dispositivos menores */
+    margin-bottom: 15px; /* Aumenta o espaçamento entre os links */
+  }
+
+  .header-right {
+    font-size: 36px; /* Ajusta o tamanho da fonte do cabeçalho em dispositivos menores */
+  }
+}

@@ -1,0 +1,122 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+    background-color: #222;
+    color: white;
+    font-size: 16px;
+  }
+  
+  /* Header */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    border-bottom: 2px solid #444; /* Adiciona a borda inferior */
+  }
+  
+  .header-left {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .header-link {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px;
+  }
+  
+  .header-link:hover {
+    background-color: #444;
+  }
+  
+  .header-right {
+    font-size: 32px;
+    font-weight: bold;
+  }
+  
+  /* Main Content */
+  .main-content {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    border-bottom: 2px solid #444; /* Adiciona a borda inferior */
+  }
+  
+  .map-container,
+  .weather-container {
+    width: 45%;
+  }
+  
+  .weather-container {
+    margin-top: 20px;
+  }
+  
+  .map-container iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+  }
+  
+  .weather-container iframe {
+    width: 100%;
+    height: 150px;
+    border-radius: 15px;
+  }
+  
+  /* Form Container (Tasks, Login, Register) */
+  .form-container {
+    width: 45%;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    border-top: 2px solid #444; /* Adiciona a borda superior */
+  }
+  
+  footer .footer-content p {
+    margin: 10px 0;
+  }
+  
+  /* Responsive design */
+  @media screen and (max-width: 768px) {
+    .main-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .map-container,
+    .weather-container {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .header-left {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .header-link {
+      margin-bottom: 10px;
+    }
+  }
+  
