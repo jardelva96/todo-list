@@ -1,6 +1,6 @@
 # 🌟 Gerenciador de Tarefas (To-Do List)
 
-### Foram gastas 16horas para a produção deste projeto!
+### Foram gastas 16 horas para a produção deste projeto!
 
 Este projeto consiste em uma aplicação web de gerenciamento de tarefas, desenvolvida como parte de um teste prático. A aplicação permite que os usuários registrem, visualizem, editem e excluam tarefas, além de marcar tarefas como concluídas ou pendentes. O sistema também oferece funcionalidades avançadas como autenticação, filtragem, paginação, e integração com contêineres Docker para fácil configuração e deploy.
 
