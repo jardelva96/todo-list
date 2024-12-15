@@ -83,12 +83,13 @@ $ cd todo-list
 #### 2️⃣ Configuração do Backend
 
 1. Navegue para o diretório do backend:
-bash
-$ cd backend
+```bash
 
+$ cd backend
+```
 
 2. Crie um ambiente virtual e instale as dependências:
-bash
+```bash
 # Criar ambiente virtual
 $ python -m venv venv
 
@@ -100,43 +101,50 @@ $ venv\Scripts\activate
 
 # Instalar dependências
 $ pip install -r requirements.txt
-
+```
 
 3. Configure o banco de dados e crie as migrações:
-bash
+```bash
+
 $ python manage.py makemigrations
 $ python manage.py migrate
-
+```
 
 4. Inicie o servidor backend:
-bash
+```bash
 $ python manage.py runserver
+```
 
 
 #### 3️⃣ Configuração do Frontend
 
 1. Navegue para o diretório do frontend:
-bash
-$ cd ../frontend
 
+```bash
+
+$ cd ../frontend
+```
 
 2. Instale as dependências:
-bash
-$ npm install
+```bash
 
+$ npm install
+```
 
 3. Inicie o servidor frontend:
-bash
-$ npm start
+```bash
 
+$ npm start
+```
 
 #### 4️⃣ Uso de Docker
 
 1. Certifique-se de estar no diretório raiz do projeto.
 2. Execute o comando abaixo para iniciar os contêineres:
-bash
-$ docker-compose up --build
+```bash
 
+$ docker-compose up --build
+```
 
 3. Acesse a aplicação no navegador em [http://localhost:3000](http://localhost:3000).
 ---
@@ -163,7 +171,8 @@ $ docker-compose up --build
 - Criando Dashboards: Agora você pode criar dashboards no Grafana para visualizar as métricas da sua aplicação.
 
 ---
-'''
+```bash
+
 ## 📂 Estrutura de Diretórios
 /
 ├── backend/            # Código do backend em Django
@@ -177,7 +186,7 @@ $ docker-compose up --build
 │   └── package.json    # Dependências do Node.js
 ├── docker-compose.yml  # Arquivo de orquestração Docker
 └── README.md           # Documentação do projeto
-'''
+```
 
 ---
 
@@ -185,17 +194,19 @@ $ docker-compose up --build
 
 ### 🛠️ Backend
 Para rodar os testes no backend:
-bash
+```bash
+
 $ cd backend
 $ pytest
-
+```
 
 ### 🖥️ Frontend
 Para rodar testes no frontend:
-bash
+```bash
+
 $ cd frontend
 $ npm test
-
+```
 
 ---
 
@@ -212,4 +223,7 @@ Sugestões e melhorias são bem-vindas! Por favor, envie um Pull Request ou abra
 ---
 
 ## 📬 Contato
+```bash
+
 Para dúvidas ou suporte, envie um e-mail para jardel.va96@gmail.com. 📧
+```
