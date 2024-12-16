@@ -150,9 +150,9 @@ $ docker-compose up --build
 
 3. Acesse a aplicação no navegador em [http://localhost:3000](http://localhost:3000).
 ---
-##📊 Monitoramento com Prometheus e Grafana
+## 📊 Monitoramento com Prometheus e Grafana
 
-###🔧 Prometheus
+### 🔧 Prometheus
 - O Prometheus coleta métricas de tempo real da aplicação e permite monitorá-la com visualizações ricas no Grafana. Para configurar o Prometheus:
 -- Configuração do Prometheus:
 -- O arquivo de configuração prometheus.yml está presente no repositório.
@@ -161,7 +161,7 @@ $ docker-compose up --build
 -- docker-compose up -d prometheus
 -- O Prometheus ficará disponível em http://localhost:9090.
 
-###🔧 Grafana
+### 🔧 Grafana
 -- O Grafana será usado para visualizar as métricas coletadas pelo Prometheus. Para configurar o Grafana:
 - Subindo o Grafana com Docker: Execute o comando abaixo para iniciar o Grafana:
 - docker-compose up -d grafana
